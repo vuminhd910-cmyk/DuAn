@@ -186,7 +186,7 @@ bool dateInRange(const char *d, const char *from, const char *to) {
 bool isNumericString(const char *s) {
     if (!s) return false;
     int len = strlen(s);
-    // REQUIRE exactly 10 digits
+    
     if (len != 10) return false;  
     for (int i = 0; i < len; ++i) {
         if (s[i] < '0' || s[i] > '9') return false;
@@ -1083,4 +1083,5 @@ int main() {
 
     return 0;
 }
+
 
